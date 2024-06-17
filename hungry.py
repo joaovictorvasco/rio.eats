@@ -179,7 +179,7 @@ else:
                           
         st_folium(m, width=700, height=500) #tamanho do mapa
         # Info dos restaurantes
-        st.subheader('Restaurantes encontrados:')
+        st.subheader('Restaurantes encontrado:')
         for idx, row in dados_filtrados.iterrows():
             with st.expander(row['NOME']):
                 st.caption(f"**Culinária**: {row['CULINARIA']}")
